@@ -1,5 +1,7 @@
 function findOdd(A) {
-  //happy coding!
-  return 0;
+  let counter = {}
+  A.forEach(element => {
+    
+  });
 }
-console.log(doTest([1, 1, 2], 2));
+console.log(findOdd([1, 1, 2], 2));
