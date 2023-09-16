@@ -1,16 +1,10 @@
 function sumOfIntegersInString(s) {
-  //get all numbers inside a string
-  //   let match = s.match(/\d/g);
-  let newArray = [];
-  let newArrayOfString = s.split("");
-  newArrayOfString.forEach((element) => {
-    if (element.match(/\d/) !== null) {
-      newArray.push(element);
-    } else {
-      return element;
-    }
-  });
-  console.log(newArray);
+  let matches = s.match(/\d+/g);
+  if (!matches) return 0;
+  const arrayOfNumbers = matches.map((item) => parseInt(item));
+  return arrayOfNumbers.reduce(
+    (accumulator, currentValue) => (accumulator = accumulator + currentValue)
+  );
 }
 console.log(
   sumOfIntegersInString(
