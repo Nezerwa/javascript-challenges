@@ -1,5 +1,7 @@
 function sumOfIntegersInString(s) {
-  console.log(s);
+    //get all numbers inside a string
+  let newArray = s.match(/\d/g).join('');
+  console.log(newArray);
 }
 console.log(
   sumOfIntegersInString(
