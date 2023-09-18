@@ -4,9 +4,10 @@
 //  now in the first position of the word, no capitalisation needs to occur.
 
 
-function reverseMessage(str) {
+const reverseMessage = (str) => {
 let ArrayOfStr = str.toLowerCase().split(' ').reverse()
 let reversed = ArrayOfStr.map((elt)=> elt.split('').reverse().join(''))
-console.log(reversed);
+return reversed.map((str)=> str.charAt(0).toUpperCase() + str.slice(1)).join(' ')
+
 }
 console.log(reverseMessage("This is an example of a Reversed Message!"));
