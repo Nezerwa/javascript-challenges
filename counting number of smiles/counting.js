@@ -1,6 +1,9 @@
 //return the total number of smiling faces in the array
 function countSmileys(arr) {
-  console.log(arr);
+  const validFaces = [":)", ":D", ";-D", ":~)", ";~D", ":-D", ":-)", ";D", ";~)", ";)", ":~D", ";-)"];
+  let filteredValid = arr.filter((item) => validFaces.indexOf(item) !== -1);
+  console.log(filteredValid);
+  return filteredValid.length
 }
 
-console.log(countSmileys([":D", ":~)", ";~D", ":)"]));
+console.log(countSmileys([";~>", ":)", ";->", ";o>", ";-(", ":~(", ";-)"]));
