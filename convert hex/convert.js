@@ -5,7 +5,7 @@ function rgb(r, g, b) {
   
   r = r < 0 ? 0 : r;
   g = g < 0 ? 0 : g;
-  b = b < 0 ? 0 : b; // complete this function
+  b = b < 0 ? 0 : b; 
   const red = r.toString(16);
   const green = g.toString(16);
   const blue = b.toString(16);
